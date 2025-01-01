@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ackli Holidays</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/styel1.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01 (123) 4567 90</p>
+          </div>
+
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/LOGO.png" alt="logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/LOGO-blue.png" alt="logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link">home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link" >about us</a>
+            </li>
+
+            <li>
+              <a href="ourservices.html" class="navbar-link" >Our Services</a>
+            </li>
+
+            <li>
+              <a href="packages.html" class="navbar-link" >Tour Packages</a>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="navbar-link" >Contacts</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary">Book Now</button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+   <!-- Hero Section -->
+   <section style="
+  height: 70vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background:  url('/assets/images/services-banner.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  text-align: center; 
+  position: relative; 
+  overflow: hidden;">
+    <div class="hero-content" style="opacity: 0; transform: translateY(30px); transition: all 1s ease;">
+        <p style="font-family: var(--ff-montserrat); font-size: 1.5em;  color: #3498db; letter-spacing: 10px; word-spacing: 6px; max-width: 600px; margin-top: 4em;">OUR</p>
+        <h1 style="font-size: 3.5em; margin-bottom: 5px; margin-top: 10px; color: #ffffff;">Services</h1>
+    </div>
+</section>
+
+<!-- para Section -->
+<div class="title-section" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 20px 30px;">
+    <h1 class="main-title" style="margin: 10px 30px;">Your Reliable Travel Partner</h1>
+    <p class="subtitle" style="margin: 15px 10em;">At Ackli Holidays, we are passionate about curating exceptional travel experiences that cater to your individual preferences. As a trusted and renowned travel agency, we proudly offer a wide array of services to meet all your travel needs. Our dedicated team of experts is focused on providing personalized service, ensuring that every step of your journey is seamless, enjoyable, and memorable. Relax and let us carefully craft your next unforgettable adventure in Sri Lanka.</p>
+</div>
+
+
+<!-- Card Section -->
+<section style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; padding: 10px; background-color: #ffffff; height: 50vh;">
+    <div 
+      style="background-color: #fff; width: 190px; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; transition: box-shadow 0.3s ease;"
+      onmouseover="springShow(this)" onmouseout="springHide(this)">
+      <img src="/assets/images/card.png" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(213, 235, 255); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transform: scale(0.8); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;" class="card-description">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #fff; margin-bottom: 10px;">Card Title 1</h3>
+        <p style="font-size: 0.9rem; color: #003256; margin: 15px; text-align: center;">This is a brief description of the card. It can contain any relevant information. The text is now fully justified for a cleaner and more professional look.</p>
+        <a href="#" style="font-size: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Read More</a>
+      </div>
+    </div>
+
+    <div 
+      style="background-color: #fff; width: 190px; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; transition: box-shadow 0.3s ease;"
+      onmouseover="springShow(this)" onmouseout="springHide(this)">
+      <img src="/assets/images/card.png" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(213, 235, 255); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transform: scale(0.8); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;" class="card-description">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #fff; margin-bottom: 10px;">Card Title 1</h3>
+        <p style="font-size: 0.9rem; color: #003256; margin: 15px; text-align: center;">This is a brief description of the card. It can contain any relevant information. The text is now fully justified for a cleaner and more professional look.</p>
+        <a href="#" style="font-size: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Read More</a>
+      </div>
+    </div>
+
+    <div 
+      style="background-color: #fff; width: 190px; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; transition: box-shadow 0.3s ease;"
+      onmouseover="springShow(this)" onmouseout="springHide(this)">
+      <img src="/assets/images/card.png" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(213, 235, 255); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transform: scale(0.8); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;" class="card-description">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #fff; margin-bottom: 10px;">Card Title 1</h3>
+        <p style="font-size: 0.9rem; color: #003256; margin: 15px; text-align: center;">This is a brief description of the card. It can contain any relevant information. The text is now fully justified for a cleaner and more professional look.</p>
+        <a href="#" style="font-size: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Read More</a>
+      </div>
+    </div>
+
+    <div 
+      style="background-color: #fff; width: 190px; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; transition: box-shadow 0.3s ease;"
+      onmouseover="springShow(this)" onmouseout="springHide(this)">
+      <img src="/assets/images/card.png" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(213, 235, 255); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transform: scale(0.8); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;" class="card-description">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #fff; margin-bottom: 10px;">Card Title 1</h3>
+        <p style="font-size: 0.9rem; color: #003256; margin: 15px; text-align: center;">This is a brief description of the card. It can contain any relevant information. The text is now fully justified for a cleaner and more professional look.</p>
+        <a href="#" style="font-size: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Read More</a>
+      </div>
+    </div>
+
+    <div 
+      style="background-color: #fff; width: 190px; height: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; position: relative; transition: box-shadow 0.3s ease;"
+      onmouseover="springShow(this)" onmouseout="springHide(this)">
+      <img src="/assets/images/card.png" alt="Card Image" style="width: 100%; height: 100%; object-fit: cover;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(213, 235, 255); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transform: scale(0.8); transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;" class="card-description">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #fff; margin-bottom: 10px;">Card Title 1</h3>
+        <p style="font-size: 0.9rem; color: #003256; margin: 15px; text-align: center;">This is a brief description of the card. It can contain any relevant information. The text is now fully justified for a cleaner and more professional look.</p>
+        <a href="#" style="font-size: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Read More</a>
+      </div>
+    </div>
+
+    
+  
+    <!-- Repeat for other cards -->
+  </section>
+  
+  <script>
+    function springShow(card) {
+      const description = card.querySelector('.card-description');
+      description.style.opacity = 1;
+      description.style.transform = 'scale(1)';
+    }
+  
+    function springHide(card) {
+      const description = card.querySelector('.card-description');
+      description.style.opacity = 0;
+      description.style.transform = 'scale(0.8)';
+    }
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // Animate hero content on load
+    window.addEventListener('load', () => {
+        document.querySelector('.hero-content').style.opacity = '1';
+        document.querySelector('.hero-content').style.transform = 'translateY(0)';
+    });
+
+    
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = document.querySelector(this.getAttribute('href'));
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/LOGO.png" alt="logo">
+          </a>
+
+          <p class="footer-text">
+            Welcome to Ackli Holidays, your trusted partner for unforgettable journeys across Sri Lanka! With over a decade of experience, we specialize in personalized travel experiences that highlight the island's beauty, culture, and hospitality. From pristine beaches to ancient heritage sites, our curated tour packages offer something special for every traveler.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+000000000000000</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">ackliholidays@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>102/2,Yudaganawa,Hingurakgoda.</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="">Ackli Holidays</a> | All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Developed by Lunar.Codes</a>
+          </li>
+
+          
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

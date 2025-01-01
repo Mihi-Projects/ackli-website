@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ackli Holidays</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+    
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01 (123) 4567 90</p>
+          </div>
+
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/LOGO.png" alt="logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/LOGO-blue.png" alt="logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link">home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link" >about us</a>
+            </li>
+
+            <li>
+              <a href="ourservices.html" class="navbar-link" >Our Services</a>
+            </li>
+
+            <li>
+              <a href="packages.html" class="navbar-link" >Tour Packages</a>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="navbar-link" >Contacts</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="booking.html" class="btn btn-primary">
+          Book Now
+        </a>
+        
+
+      </div>
+    </div>
+
+  </header>
+ 
+
+
+
+
+
+  <main>
+    <article>
+<!-- Hero Section -->
+<div class="relative h-[500px] w-full overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+      <img 
+          src="assets/images/book-banner.png" 
+          alt="Tropical beach aerial view" 
+          class="w-full h-full object-cover"
+      />
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)]"></div>
+
+  </div>
+  
+  <!-- Text Content -->
+  <div class="relative h-full max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center mt-10">
+      <h2 class="text-sky-400 text-xl md:text-2xl uppercase tracking-widest mb-4">
+        book
+      </h2>
+      <h1 class="text-white text-4xl md:text-6xl font-bold uppercase">
+          YOUR TOUR
+      </h1>
+  </div>
+</div>
+
+
+
+<div class="form-container">
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <div class="form-header">
+          <h2>Book a Tour</h2>
+          <hr>
+      </div>
+      <input type="hidden" name="access_key" value="c71d4be7-7f75-4b2e-bf83-c673970d5ca1">
+      <input type="text" name="Name" placeholder="Your Name" required class="input-field">
+      <input type="email" name="Email" placeholder="Email" required class="input-field">
+      <input type="text" name="Subject" placeholder="Subject" class="input-field">
+      <select name="inquiryType" required class="input-field">
+          <option value="" disabled selected>Select your tour package</option>
+          <option value="Spiritual">Spiritual</option>
+          <option value="Wellness">Wellness</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Wildlife">Wildlife</option>
+          <option value="Cultural">Cultural</option>
+          
+      </select>
+      <textarea name="Message" placeholder="Message" class="input-field"></textarea>
+      <button type="submit" class="submit-btn">Send</button>
+  </form>
+</div>
+
+<style>
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f1f3f4, #f9f9f9);
+      margin: 0;
+      padding: 0;
+  }
+
+  .form-container {
+      padding: 40px;
+      background: #fff;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 50px auto;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+  }
+
+  .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .form-header {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .form-header h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin: 0;
+      font-weight: 600;
+  }
+
+  .form-header hr {
+      border: none;
+      height: 2px;
+      background-color: #ddd;
+      margin: 10px auto;
+      width: 40%;
+  }
+
+  .input-field {
+      padding: 14px 16px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .input-field:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+
+  select.input-field {
+      padding: 12px 16px;
+  }
+
+  textarea.input-field {
+      resize: vertical;
+  }
+
+  .submit-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 14px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .submit-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+  }
+
+  .submit-btn:active {
+      background-color: #004085;
+  }
+</style>
+
+    
+
+    
+
+      
+  </main>
+
+
+
+<!-- #FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-top">
+    <div class="container">
+
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="./assets/images/LOGO.png" alt="logo">
+        </a>
+
+        <p class="footer-text">
+          Ackli Holidays, with over a decade of experience, specializes in personalized journeys across Sri Lanka. From stunning beaches to ancient sites, we showcase the island's beauty, culture, and hospitality. Explore with us!
+        </p>
+
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="contact-title">Contact Us</h4>
+        <p class="contact-text">
+          Feel free to contact and reach us !!
+        </p>
+
+        <ul>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+          </li>
+
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+          </li>
+
+          <li class="contact-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <address>3146 Koontz, California</address>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer-form">
+        <p class="form-text">
+          Subscribe our newsletter for more update & news !!
+        </p>
+
+        <form action="" class="form-wrapper">
+          <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+          <button type="submit" class="btn btn-secondary">Subscribe</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2025 <a href="">Ackli Holidays | All rights reserved</a>
+      </p>
+
+      <ul class="footer-bottom-list">
+        <li>
+          <a href="#" class="footer-bottom-link">Developed by Mihilayan Sachinthana</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
+
+<!-- GO TO TOP -->
+<a href="#top" class="go-top" data-go-top>
+  <ion-icon name="chevron-up-outline"></ion-icon>
+</a>
+
+<script src="assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+<style>
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content inside the container */
+    padding-left: 20px; /* Add padding for left side */
+    padding-right: 20px; /* Add padding for right side */
+  }
+</style>

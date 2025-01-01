@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ackli Holidays</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/styel1.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01 (123) 4567 90</p>
+          </div>
+
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/LOGO.png" alt="logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/LOGO-blue.png" alt="logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link">home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link" >about us</a>
+            </li>
+
+            <li>
+              <a href="ourservices.html" class="navbar-link" >Our Services</a>
+            </li>
+
+            <li>
+              <a href="packages.html" class="navbar-link" >Tour Packages</a>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="navbar-link" >Contact</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="booking.html" class="btn btn-primary">
+          Book Now
+        </a>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+   <!-- Hero Section -->
+   <section style="
+  height: 70vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background:  url('/assets/images/S-banner.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(212, 100%, 19%, 0.712);
+  background-blend-mode: overlay;
+  text-align: center; 
+  position: relative; 
+  overflow: hidden;">
+    <div class="hero-content" style="opacity: 0; transform: translateY(30px); transition: all 1s ease;">
+        <p style="font-family: var(--ff-montserrat); font-size: 1.5em;  color: #3498db; letter-spacing: 10px; word-spacing: 6px; max-width: 600px; margin-top: 4em;">TOUR PACKAGE</p>
+        <h1 style="font-size: 3.5em; margin-bottom: 5px; margin-top: 10px; color: #ffffff;">Adventure</h1>
+    </div>
+</section>
+
+<!-- About Content -->
+<section style="padding: 100px 20px; max-width: 1200px; margin: 0 auto;">
+    <div class="fade-in" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; opacity: 0; transform: translateY(30px); transition: all 1s ease;">
+        <!-- Image Slider Section -->
+        <div>
+            <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <div class="slider" style="display: flex; transition: transform 1s ease;">
+                    <img src="/assets/images/Adventure-1.jpg" alt="Image 1" style="width: 100%; flex-shrink: 0; border-radius: 20px;">
+                    <img src="/assets/images/Adventure-2.jpg" alt="Image 2" style="width: 100%; flex-shrink: 0; border-radius: 20px;">
+                    <img src="/assets/images/Adventure-3.jpg" alt="Image 3" style="width: 100%; flex-shrink: 0; border-radius: 20px;">
+                    <img src="/assets/images/Adventure-4.jpg" alt="Image 3" style="width: 100%; flex-shrink: 0; border-radius: 20px;">
+                </div>
+                <!-- Slide Navigation -->
+                <button onclick="prevSlide()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">&#10094;</button>
+                <button onclick="nextSlide()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">&#10095;</button>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <h2 style="font-size: 2.5em; margin-bottom: 30px; color: #2d3436;"></h2>
+            <p style="line-height: 1.8; color: #636e72; margin-bottom: 20px;">
+                
+
+
+
+                
+
+Calling all thrill-seekers and adventure enthusiasts! Get ready to embark on an adrenaline-pumping journey through the wonders of Sri Lanka. Our adventure tours offer a kaleidoscope of heart-pounding experiences amidst breathtaking landscapes. Venture into the lush rainforests and challenge yourself with exhilarating treks, traversing picturesque trails that lead to hidden waterfalls and panoramic vistas.
+
+Conquer the mighty waves of the Indian Ocean with thrilling water sports, from surfing and snorkelling to kiteboarding and jet skiing, creating unforgettable memories. Embrace the wild side with wildlife safaris, encountering majestic elephants, leopards, and colourful bird species in their natural habitats.
+
+Climb the iconic Sigiriya Rock or explore mysterious cave temples, unravelling the ancient mysteries as you ascend.
+
+Feel the rush as you zip line through lush canopies or go white-water rafting down exhilarating rivers, immersing yourself in the untamed beauty of Sri Lanka. Our experienced guides will ensure your safety and provide insightful knowledge of each adventure, making your journey all the more exhilarating.
+
+Join us on this unforgettable quest, where every moment is a thrilling escapade, and every challenge unlocks a sense of accomplishment. Experience the excitement of adventure tours in Sri Lanka and leave with memories that will fuel your spirit for a lifetime.
+Key Locations:
+
+    Adams Peak
+    Hikkaduwa
+    Kitulgala White Water Rafting
+    Ella
+
+
+                
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        }
+        const offset = -currentSlide * 100;
+        document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide--;
+        showSlide(currentSlide);
+    }
+
+    // Optional: Auto slide every 3 seconds
+    setInterval(nextSlide, 3000);
+</script>
+
+
+
+
+
+
+
+<script>
+    // Animate hero content on load
+    window.addEventListener('load', () => {
+        document.querySelector('.hero-content').style.opacity = '1';
+        document.querySelector('.hero-content').style.transform = 'translateY(0)';
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in').forEach(element => {
+        observer.observe(element);
+    });
+
+    // Team card hover effect
+    document.querySelectorAll('.team-card').forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'translateY(-10px)';
+        });
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Animate statistics when in view
+    let hasAnimated = false;
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !hasAnimated) {
+                animateNumbers();
+                hasAnimated = true;
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statsObserver.observe(document.querySelector('.stats-grid'));
+
+    function animateNumbers() {
+        const numbers = document.querySelectorAll('.stat-number');
+        const finalValues = [ 500, 10, 50]; // Final values for each stat
+
+        numbers.forEach((number, index) => {
+            let startValue = 0;
+            let endValue = finalValues[index];
+            let duration = 2000;
+            let counter = setInterval(() => {
+                startValue += 1;
+                number.textContent = startValue;
+                if (startValue === endValue) {
+                    clearInterval(counter);
+                    number.textContent = endValue + "+";
+                }
+            }, duration / endValue);
+        });
+    }
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = document.querySelector(this.getAttribute('href'));
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+  </main>
+
+
+
+
+<!-- #FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-top">
+    <div class="container">
+
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="./assets/images/LOGO.png" alt="logo">
+        </a>
+
+        <p class="footer-text">
+          Ackli Holidays, with over a decade of experience, specializes in personalized journeys across Sri Lanka. From stunning beaches to ancient sites, we showcase the island's beauty, culture, and hospitality. Explore with us!
+        </p>
+
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="contact-title">Contact Us</h4>
+        <p class="contact-text">
+          Feel free to contact and reach us !!
+        </p>
+
+        <ul>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+          </li>
+
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+          </li>
+
+          <li class="contact-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <address>3146 Koontz, California</address>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="footer-form">
+        <p class="form-text">
+          Subscribe our newsletter for more update & news !!
+        </p>
+
+        <form action="" class="form-wrapper">
+          <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+          <button type="submit" class="btn btn-secondary">Subscribe</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2025 <a href="">Ackli Holidays | All rights reserved</a>
+      </p>
+
+      <ul class="footer-bottom-list">
+        <li>
+          <a href="#" class="footer-bottom-link">Developed by Mihilayan Sachinthana</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
+
+<!-- GO TO TOP -->
+<a href="#top" class="go-top" data-go-top>
+  <ion-icon name="chevron-up-outline"></ion-icon>
+</a>
+
+<script src="assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+<style>
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content inside the container */
+    padding-left: 20px; /* Add padding for left side */
+    padding-right: 20px; /* Add padding for right side */
+  }
+</style>
